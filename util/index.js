@@ -1,7 +1,5 @@
 const fs = require("fs");
 
-
-
 const getRaw = () => fs.readFileSync("input.txt", "utf8").toString();
 
 const toTrimmedLines = (raw) => raw.trim().split('\n').map(l => l.trim());
